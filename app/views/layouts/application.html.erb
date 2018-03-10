@@ -480,6 +480,48 @@
 							</ul>
 						</div>
 					</div>
+
+					<div class="col-lg-8">
+					<div class="single-contact-box">
+						<div class="row">
+							<div class="col-md-6">
+								<%= form_for @contact do |f| %>
+									<%= f.label :name %> <br>
+									<%= f.text_field :name, required: true %>
+							</div>
+
+									
+								<div class="col-md-6">
+
+									<%= f.label :email %> <br> 
+									<%= f.text_field :email, required: true %>
+								</div>
+
+									
+
+									<div class="col-md-12">
+
+									<%= f.label :message %> <br> 
+									<%= f.text_area :message, as: :text %>
+
+								</div>
+
+								<div class="hidden">
+									<%= f.label :nickname %> 
+									<%= f.text_field :nickname, hint: 'Leave this field blank' %>
+								</div>
+
+								<div class="col-md-3 col-sm-6">
+
+								<%= f.submit 'Send Message', class: 'btn-one' %>
+
+							</div>
+
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section><!-- contact section end -->
 		<!-- footer section start -->
 		<footer class="footer">

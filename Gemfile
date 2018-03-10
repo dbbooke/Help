@@ -55,5 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
  gem 'jquery-rails'
 
 gem 'font-awesome-sass', '~> 5.0.6'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
  ruby '2.4.1'
